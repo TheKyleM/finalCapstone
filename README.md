@@ -17,7 +17,7 @@ To install the files, you must be have VSCode after that, do the following:
 3. This should be all done. You can test this by running the index.html on your web browser by copying and pasting the file path to the browser's URL.
 
 Once you have installed it, the website should look like this:
-![screenshot]([screenshot.png](https://imgur.com/a/mbTfhKh))
+![screenshot](https://github.com/TheKyleM/finalCapstone/blob/10841d4932e0b13f1f76365f785cfb745fe3ad1a/screenshot.png)
 
 ### 2 - Usage ###
 Once the website has been properly integrated and is working, you will be able to hover over each image. Using CSS, a thumbs up and a heart button will appear
