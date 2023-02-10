@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Task 42 Capstone Project IV</title> <!--Header created, title is created-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="checkLoading()">
+            <header>
+                <!--Logo/title for the website, shows up in the main body at the top since it is a header-->
+
+                <h1 id ="title"><a href = index.html>B.S.A</a></h1>
+                <h2 id = "subtitle">Basketball Shoes Archives</h2>
+                <!--Creating the menu, i link the text about us and shop now to their respective pages using a href-->
+                <div class = "menu">
+                    <nav>
+                        <a href ="aboutUs.html" id = "about">About Us</a>
+                        <a href = "Shopnow.html" id = "shop">Shop Now</a>
+                        <a href = "save.html" id = "save">Saved Items</a>
+                    </nav>
+                </div>
+            </header>
+
+            <!--First block of text as a paragraph, giving it an id so i can edit this specific block in css-->
+            <main class ="intro">
+                <p id = "speech">On a court with the world's best athletes, the players not only have to shine but
+                    they have to look good doing it. With a major boom in the sneaker industry during the 2010's,
+                    We look at the best (in our opinon) Basketball shoes to ever grace the court.
+                </p>
+            </main>
+
+            <!--Another main class called shoes whcih will be the images of shoes that i show-->
+            <main class ="shoes">
+                    <div class = "shoe1">
+                        <!--image source locating the images and naiming it thumbnail-->
+                        <img src="ShoeImage/k9.png"id="thumbnail">
+                        <img id ="heart" src="SVG/heart.svg" width="18" height="18"></img>
+                        <img id ="like" src="SVG/likeoff.svg" width="20" height="20" ></img>
+                        <div>Kobe 9's</div>
+                    </div>
+                    
+                    
+                    <div class = "shoe2">
+                        <img src="ShoeImage/j28.png" id="thumbnail">
+                        <img id ="heart" src="SVG/heart.svg" width="18" height="18"></img>
+                        <img id ="like" src="SVG/likeoff.svg" width="20" height="20"></img>
+                        <div>Jordan XX8</div>
+                    </div>
+                    
+                    
+                    <div class = "shoe3">
+                        <img src="ShoeImage/c10.png" id="thumbnail">
+                        <img id ="heart" src="SVG/heart.svg" width="18" height="18"></img>
+                        <img id ="like" src="SVG/likeoff.svg" width="20" height="20"></img>
+                        <div>Curry 10</div>
+                    </div>
+
+                    <div class = "shoe4">
+                        <img src="ShoeImage/kyrie2.png" id="thumbnail">
+                        <img id ="like" src="SVG/likeoff.svg" width="20" height="20"></img>
+                        <img id ="heart" src="SVG/heart.svg" width="18" height="18"></img>
+                        <div>Kyrie 2</div>
+                    </div>
+
+                    <div class = "shoe5">
+                        <img src="ShoeImage/lb1.png" id="thumbnail">
+                        <img id ="like" src="SVG/likeoff.svg" width="20" height="20"></img>
+                        <img id ="heart" src="SVG/heart.svg" width="18" height="18"></img>
+                        <div>LeBron 14</div>
+                    </div>
+
+<!--Creation of table to show sho name price and release date-->
+               </main>
+               <main class = "shoeTable">
+                <table>
+                    <tr>
+                      <th>Shoe Name</th>
+                      <th>Release Date</th>
+                      <th>Price</th>
+                      <th>Link</th>
+                    </tr>
+                    <tr>
+                      <td>Kobe 9</td>
+                      <td>Feb 2014</td>
+                      <td>$683.00</td>
+                      <td><a href = https://stockx.com/nike/kobe/9 id = "link">Click me</a></td> <!--Linking to the website which i got the information and for userr to buy-->
+                    </tr>
+                    <tr>
+                        <td>Jordan XX8</td>
+                        <td>Feb 2012</td>
+                        <td>$250.00</td>
+                        <td><a href = https://stockx.com/jordan-xx8-green-camo id = "link">Click me</a></td>
+                      </tr>
+                    <tr>
+                        <td>Curry 10</td>
+                        <td>Oct 2022</td>
+                        <td>$150.00</td>
+                        <td><a href = https://stockx.com/under-armour-curry-flow-10-treasure-island id = "link">Click me</a></td>
+                      </tr>
+                      <tr>
+                        <td>Kyrie 2</td>
+                        <td>Oct 2017</td>
+                        <td>$150.00</td>
+                        <td><a href = https://stockx.com/kyrie-2-usa id = "link">Click me</a></td>
+                      </tr>
+
+                      <tr>
+                        <td>LeBron 14</td>
+                        <td>July 2016</td>
+                        <td>$250.00</td>
+                        <td><a href = https://stockx.com/nike-lebron-14-mag-2015 id = "link">Click me</a></td>
+                      </tr>
+
+                  </table>
+                    <!-- Ordered list-->
+                  <div class ="ranking">
+                    <h4>Ranking</h2>
+                  <ol>
+                    <li>Jordan XX8</li>
+                    <li>Kobe 9</li>
+                    <li>Kyrie 2</li>
+                    <li>Lebron 14</li>
+                    <li>Curry 10</li>
+                  </ol>
+                </div>
+               </main>
+
+               <!--More text blocks-->
+               <main class ="bottomhalf">
+                <h3>Our Ranking</h4>
+                <p id = "desc">Coming first in our ranking is the elusive jordan XX8. Although it has a price point of $250, it is without the doubt
+                    one of the most elite shoes in the game right now. Second are the Kobe 9, this sheo introduced the extreme high tops mixed with the beloved 
+                    Kobe silhouette combines for a deadly combo. Coming in third is the Kyrie 2, copying its predecessor the Kyrie 1, it is a shoe for quick 
+                    athletes who need strong court grip. On the fourth spot we have the LeBron 14, a shoe truly fit for a king however it falls behind on the specs compared to the rest.
+                    finally we have the Curry 10, a good shoe by all means however it pales to it's predecessors in terms of style.
+                </p>
+               </main><h2>Comment Section</h2>
+               <!--Testimonials including an image plus using span-->
+               <div class="container">
+                <img src="ShoeImage/i.png" alt="Avatar" style="width:90px">
+                <p><span>Kevon looney</span> Center for Golden State Warriors</p>
+                <p>Jordan XX8 is the greatest!</p>
+              </div>
+
+
+              <script type='text/javascript' src='./basketball.js'></script>
+
+              <main id = "showComment">
+                
+              </main>
+    </body>
+<!--Footer starts here which shows at the bottom of the page/bottom section-->
+
+<footer>
+
+    <!--Using radio submit form to ask user which shoe they like-->
+    <div class = "vote">
+        <h4 class="fav">Which was your favourite></h4>
+        <div class="form2">
+            <form>
+                <!--setting type as radio and adding the value, id and name-->
+                <input type="radio" id="j28" name="favShoe" value="Jordan28">
+                <!--Labelling each form-->
+                <label for="j28">Jordan XX8</label><br>
+                <input type="radio" id="k9" name="favShoe" value="Kobe 9">
+                <label for="k9">Kobe 9</label><br>
+                <input type="radio" id="k2" name="favShoe" value="Kyrie 2">
+                <label for="k2">Kyrie 2</label>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+    </div>
+
+
+    <!--Regulamr text style form, similar to radio-->
+    <div class="comment">
+        <h4 class="leaveComment">Leave a comment!</h3>
+            <div class = "form1">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Name here"><br><br>
+            <label for="msg">Message:</label><br>
+            <input type="text" id="msg" name="msg" placeholder="Write your message..."><br><br>
+            <button type="button" onclick="createNewComment()">Submit</button>
+        </form>
+        </div>
+    </div>
+
+
+    
+
+</footer>
+
+</html>

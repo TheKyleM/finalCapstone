@@ -1,0 +1,481 @@
+/*Using import to import a font i want using google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100&display=swap');
+
+/*Setting the body styles, which everything will use unless given a different value*/
+
+body{
+    font-family:'Poppins', sans-serif;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+/*Changing some values for the headers*/
+
+.menu{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#about{
+    margin-right:2%;
+}
+
+#save{
+    margin-left: 2%;
+}
+
+#shop{
+    margin-right:2%;
+    margin-left:2%;
+}
+
+#title{
+    height: 55px;
+    font-size: 45px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+#subtitle{
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+header{ 
+    font-size: 45px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 2rem;
+}
+
+
+/*Did not want the links to appear as purple and underlineds, so i called upon a and changed the link text decoration to no underline and colour black*/
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+/*Once the site is visited it still has no underline and color black because we keep the same text decoration and colour*/
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+#speech{
+    font-size: 0.85em;
+    font-weight:550;
+    margin: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: beige;
+
+}
+/*Using a grid to show the shoes, so that i can place them properly in a grid form*/
+/*Using justify content and sapce evenly to get each image to space evenly and be in the center*/
+
+
+.shoes{
+    font-weight: bold;
+    display: grid;
+    gap: 15px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 10px;
+}
+
+/*Using VW so that i get responsive web design*/
+
+.shoes img{
+    width: 30vw;
+}
+
+/*Assigning a grid location and making position relative */
+
+
+.shoe1{
+    grid-column-start: 1;
+    position: relative;
+}
+
+/*Changing the position of the text that goes on top of the image using the top, left and transform
+opacity is 0 because i want the text to be hidden until it is hovered upon
+webkit transition is a function which gives it the ability to show up and controls the time it takes to do that, using ease makes it smoother when it shows 
+*/
+
+#heart{
+    top:0;
+    right: 0;
+    position: absolute;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+#like{
+    top:0;
+    left: 0px;
+    position: absolute;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+
+
+
+.shoe1 div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    background: black;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+/*Using the hover function, when mouse is on top, the cursor turns into a pointer and the text becomes visible, when the visibility and opacity changes, it uses the webkit to knowthe how fast it changes etc.*/
+
+.shoe1:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe1:hover #heart {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe1:hover #like {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe2{
+    grid-column-start: 2;
+    position: relative;
+}
+
+.shoe2 div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    background: black;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+.shoe2:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+    cursor: pointer; 
+}
+
+.shoe2:hover #heart {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe2:hover #like {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe3{
+    grid-column-start: 3;
+    position: relative;
+}
+
+.shoe3:hover #heart {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe3:hover #like {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe3 div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    background: black;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+.shoe3:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+    cursor: pointer; 
+}
+
+.shoe4{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    position: relative;
+}
+
+.shoe4:hover #heart {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe4:hover #like {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe4 div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    background: black;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+.shoe4:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+    cursor: pointer; 
+}
+
+.shoe5{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+}
+
+.shoe5:hover #heart {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe5:hover #like {
+    width: 150px;
+    visibility: visible;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.shoe5 div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    color: white;
+    background: black;
+    visibility: hidden;
+    -webkit-transition-: visibility 0s, opacity 0.2s ease; 
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+.shoe5:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+    cursor: pointer; 
+}
+
+/*Thumbnail is the image it uses webkit like above and on hover it scales up*/
+
+
+.thumbnail { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.2s; 
+    -webkit-transition-timing-function: ease; 
+    } 
+
+.thumbnail:hover { 
+    transform: scale(1.15); 
+}
+
+/*Styling the shoe tables*/
+
+
+.shoeTable{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+table{
+    margin-top: 25px;
+    width: 50%;
+    text-align: center;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.ranking{
+    text-align: center; 
+    opacity: 0.9;
+    width: 200px;
+    background-color: beige;
+}
+
+
+.bottomhalf{
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    font-size: 0.85em;
+    font-weight:550;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.comment{
+    text-align: center;
+    border:1px solid lightgrey;
+    padding-bottom: 2rem;
+}
+
+.contact{
+    text-align: center;
+    border:1px solid lightgrey;
+    padding-bottom: 2rem;
+}
+
+.form1{
+    text-align: center;
+    border: 1px solid lightgrey;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#msg{
+    height:150px;
+    width: 75%;
+}
+
+#fname{
+    width: 75%;
+}
+
+#address{
+    width: 75%;
+    margin-bottom: 1.5rem;
+}
+
+label{
+text-align: center;
+padding-left: 3rem;
+margin-top: 1rem;
+}
+
+
+.vote{
+    text-align: center;
+}
+.form2{
+    text-align: left;
+    border: 1px solid lightgrey;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  /*Using @media to have responsive web design for the testimonial, which changes when the width of the page is below 700px*/
+
+
+  @media (max-width: 700px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
