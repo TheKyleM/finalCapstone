@@ -17,7 +17,7 @@ To install the files, you must be have VSCode after that, do the following:
 3. This should be all done. You can test this by running the index.html on your web browser by copying and pasting the file path to the browser's URL.
 
 Once you have installed it, the website should look like this:
-![screenshot](Screenshot 2023-02-10 at 15.33.49.png)
+![screenshot](Screenshot.png)
 
 ### 2 - Usage ###
 Once the website has been properly integrated and is working, you will be able to hover over each image. Using CSS, a thumbs up and a heart button will appear
